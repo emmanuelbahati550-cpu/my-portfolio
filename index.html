@@ -286,57 +286,63 @@
             background: #0284c7;
             color: white;
         }
-    </style>
+ </style>
 </head>
 <body>
-    <div class="main-card">
-        <div class="badge">POS 1 - Computer Studies</div>
-        <h1><i class="fa-solid fa-code"></i> Apex Developer Network</h1>
-        <p class="subtitle">Software Engineering environment running flawlessly.</p>
-        
-        <div class="theme-zone">
-            <h3 id="mode-title">Dark Mode Theme Enabled</h3>
-            <button id="theme-btn" onclick="toggleTheme()">Switch to Light Mode</button>
-        </div>
-
-        <div class="gallery-container">
-            <h3><i class="fa-solid fa-laptop-code"></i> My Software Projects</h3>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h4>Web Automation Script</h4>
-                    <p>A lightweight algorithm designed to optimize database lookups inside RAM grids.</p>
-                </div>
-                <div class="project-card">
-                    <h4>Sleek UI Dashboard</h4>
-                    <p>A high-performance responsive interface built to run efficiently on low-spec hardware.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="form-container">
-            <h3><i class="fa-solid fa-envelope"></i> Test Project Contact Form</h3>
-            <div class="input-group">
-                <input type="text" id="name-field" placeholder="Enter Client Name">
-            </div>
-            <div class="input-group">
-                <textarea id="message-field" placeholder="Enter Project Scope..." rows="2" maxlength="200"></textarea>
-            </div>
-            <div class="counter-label">Chars left: <span id="char-num">200</span></div>
-            
-            <button onclick="processInput()">Submit Form Details</button>
-        </div>
-
-        <div class="status-zone">
-            <p id="status-text">Ready for developer interaction test...</p>
-            <button id="copy-btn" onclick="copyStatusText()"><i class="fa-solid fa-copy"></i> Copy Packet Data</button>
-        </div>
-
-        <div class="social-zone">
-            <a href="https://github.com" target="_blank" title="GitHub Profile"><i class="fa-brands fa-github"></i></a>
-            <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="mailto:yourgmail@gmail.com" title="Email Me"><i class="fa-solid fa-envelope"></i></a>
-        </div>
+  <div class="main-card">
+    <div class="badge">POS 1 - Computer Studies</div>
+    <h1><i class="fa-solid fa-code"></i> Apex Developer Network</h1>
+    <p class="subtitle">Software Engineering environment running flawlessly.</p>
+    
+    <div class="theme-zone">
+      <h3 id="mode-title">Dark Mode Theme Enabled</h3>
+      <button id="theme-btn" onclick="toggleTheme()">Switch to Light Mode</button>
     </div>
+
+    <div class="gallery-container">
+      <h3><i class="fa-solid fa-laptop-code"></i> My Software Projects</h3>
+      <div class="project-grid">
+        <div class="project-card">
+          <h4>Web Automation Script</h4>
+          <p>A lightweight algorithm designed to optimize database lookups inside RAM grids.</p>
+        </div>
+        <div class="project-card">
+          <h4>Sleek UI Dashboard</h4>
+          <p>A high-performance responsive interface built to run efficiently on low-spec hardware.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-container">
+      <h3><i class="fa-solid fa-envelope"></i> Contact Me</h3>
+      <form action="https://formspree.io/f/mqeradgg" method="POST">
+        <div class="input-group">
+          <input type="text" name="name" placeholder="Enter Client Name" required>
+        </div>
+        <div class="input-group">
+          <input type="email" name="email" placeholder="Enter Client Email" required>
+        </div>
+        <div class="input-group">
+          <textarea name="message" placeholder="Enter Project Scope..." rows="2" maxlength="200" required></textarea>
+        </div>
+        <div class="counter-label">Chars left: <span id="char-num">200</span></div>
+        <button type="submit">Submit Form Details</button>
+      </form>
+    </div>
+
+    <div class="status-zone">
+      <p id="status-text">Ready for developer interaction test...</p>
+      <button id="copy-btn" onclick="copyStatusText()"><i class="fa-solid fa-copy"></i> Copy Packet Data</button>
+    </div>
+
+    <div class="social-zone">
+      <a href="https://github.com" target="_blank" title="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="mailto:yourgmail@gmail.com" title="Email Me"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </div>
+</body>
+</html>
 
     <script>
         function toggleTheme() {
@@ -411,4 +417,5 @@
         });
     </script>
 </body>
-</html>
+</html> 
+
